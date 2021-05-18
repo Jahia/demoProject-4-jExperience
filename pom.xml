@@ -69,7 +69,7 @@
 
     <properties>
         <jahia-module-type>system</jahia-module-type>
-        <jahia-depends>default</jahia-depends>
+        <jahia-depends>default,templateSet-4-jExperience</jahia-depends>
         <jahia-module-signature>MC0CFBhX4AYV0Vwysns6pLuVOeD6UhY9AhUAhptRBuxlXdpVMXr1NRMElHPacHc=</jahia-module-signature>
     </properties>
 
