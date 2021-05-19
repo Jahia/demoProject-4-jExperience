@@ -112,7 +112,6 @@
                         <configuration>
                             <target>
                                 <zip destfile="${project.build.directory}/demo/jExperience-demo-project.zip" basedir="${basedir}/src/main/jExperience-demo-project" />
-                                <zip destfile="${project.build.directory}/demo/users.zip" basedir="${basedir}/src/main/users" />
                                 <zip destfile="${project.build.directory}/classes/META-INF/prepackagedSites/jExperience-demo-project_export.zip">
                                     <fileset dir="${project.build.directory}/demo" />
                                     <fileset dir="${basedir}/src/main/prepackagedSites" includes="export.properties" />
