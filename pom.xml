@@ -89,16 +89,39 @@
     </repositories>
 
     <build>
+        <resources>
+            <resource>
+                <directory>${project.build.directory}/classes/META-INF/prepackagedSites</directory>
+                <includes>
+                    <include>jExperience-demo-project_export.zip</include>
+                </includes>
+                <targetPath>META-INF/prepackagedSites</targetPath>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <instructions>
-<!--                        <Jahia-Depends>default</Jahia-Depends>-->
-                    </instructions>
-                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>build-jExperience-demo-project</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <zip destfile="${project.build.directory}/demo/jExperience-demo-project.zip" basedir="${basedir}/src/main/jExperience-demo-project" />
+                                <zip destfile="${project.build.directory}/demo/users.zip" basedir="${basedir}/src/main/users" />
+                                <zip destfile="${project.build.directory}/classes/META-INF/prepackagedSites/jExperience-demo-project_export.zip">
+                                    <fileset dir="${project.build.directory}/demo" />
+                                    <fileset dir="${basedir}/src/main/prepackagedSites" includes="export.properties" />
+                                </zip>
+                                <delete dir="${project.build.directory}/demo" />
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
