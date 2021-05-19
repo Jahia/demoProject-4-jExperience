@@ -405,7 +405,7 @@
                                    jcr:uuid="77da0692-3d59-43d9-8bdc-803bedcf5104"
                                    wem:jsonFilter="{&#34;filters&#34;:[{&#34;condition&#34;:{&#34;type&#34;:&#34;returningVisitorCondition&#34;,&#34;parameterValues&#34;:{&#34;since&#34;:5}},&#34;properties&#34;:{&#34;score&#34;:1}}]}"
                                    wem:tab="customScore">
-                  <j:translation_en image="#/sites/prePackTest1/files/people-and-dog-coffee-break.jpg"
+                  <j:translation_en image="#/sites/jExperience-demo-project/files/people-and-dog-coffee-break.jpg"
                                     j:lastPublished="2021-05-18T20:19:36.673+02:00"
                                     j:lastPublishedBy="root"
                                     j:published="true"
@@ -429,7 +429,7 @@
                                   jcr:primaryType="t4jnt:imageRef"
                                   jcr:uuid="8b7698dd-a12f-4d64-95e2-e3b436058d5e"
                                   wem:tab="no-condition">
-                  <j:translation_en image="#/sites/prePackTest1/files/meeting-group.jpg"
+                  <j:translation_en image="#/sites/jExperience-demo-project/files/meeting-group.jpg"
                                     j:lastPublished="2021-05-18T20:19:36.673+02:00"
                                     j:lastPublishedBy="root"
                                     j:published="true"
