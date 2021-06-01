@@ -2958,6 +2958,20 @@
                                          j:roles="site-administrator"
                                          jcr:primaryType="jnt:ace"
                                          jcr:uuid="7feb7229-eb4b-4158-8f95-b325e99ab54d"/>
+            <GRANT_g_admins j:aceType="GRANT"
+                            j:principal="g:admins"
+                            j:protected="false"
+                            j:roles="editor-in-chief"
+                            jcr:primaryType="jnt:ace"
+                            jcr:uuid="cf5b2f7f-0088-464a-9896-5004d84f14e9"/>
+            <REFeditor-in-chief_currentSite-access_g_admins j:aceType="GRANT"
+                                                            j:externalPermissionsName="currentSite-access"
+                                                            j:principal="g:admins"
+                                                            j:protected="true"
+                                                            j:roles="editor-in-chief"
+                                                            j:sourceAce="#/sites/jExperience-demo-project/j:acl/GRANT_g_admins #/sites/jExperience-demo-project/j:acl/GRANT_g_admins"
+                                                            jcr:primaryType="jnt:externalAce"
+                                                            jcr:uuid="005d43d5-a873-4926-8aa4-31e47d171d78"/>
          </j:acl>
       </jExperience-demo-project>
    </sites>
